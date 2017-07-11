@@ -30,9 +30,7 @@ if($user && $password){
     }else {
         while ($row = $result->fetch_assoc()) {
             session_start();
-            $_SESSION['id'] = $row['id'];
             $_SESSION['name'] = $row['name'];
-
         }
         header('Location: index.php');
     }
