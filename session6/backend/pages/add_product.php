@@ -3,8 +3,8 @@
 $product_nameErr = $priceErr = $imageErr = $categoryErr = $manufacturerErr = $samenameErr = $sameimageErr = "";
 $product_name = $price = $category = $manufacturer = $congratulation = "";
 include "../include/connect.php";
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $description = $_POST["description"];
+
+    $description = $_POST["description"];if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $date = $_POST["date"];
     if ($_POST['category'] == "") {
         $categoryErr =  "<span style='color: red; font-weight: bold'>* Please select category</span>";
